@@ -2,6 +2,16 @@ public class Bog {
     int antal;
     String title;
 
+    public Bog(String title) {
+        this.title = title;
+    }
+
+    public Bog(int antal, String title) {
+        this.antal = antal;
+        this.title = title;
+
+    }
+
     public int getAntal() {
         return antal;
     }
@@ -16,11 +26,5 @@ public class Bog {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public Bog(int antal, String title) {
-        this.antal = antal;
-        this.title = title;
-
     }
 }
