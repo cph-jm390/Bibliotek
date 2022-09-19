@@ -1,5 +1,5 @@
 public class Bog {
-    int antal;
+    boolean erUdlånt;
     String title;
     int BogID;
 
@@ -7,19 +7,27 @@ public class Bog {
         this.title = title;
     }
 
-    public Bog(int antal, String title, int bogID) {
-        this.antal = antal;
+    public Bog(String title, int bogID,boolean erUdlånt ) {
+        this.erUdlånt = erUdlånt;
         this.title = title;
         this.BogID = bogID;
 
     }
 
-    public int getAntal() {
-        return antal;
+    public int getBogID() {
+        return BogID;
     }
 
-    public void setAntal(int antal) {
-        this.antal = antal;
+    public void setBogID(int bogID) {
+        BogID = bogID;
+    }
+
+    public boolean isErUdlånt() {
+        return erUdlånt;
+    }
+
+    public void setErUdlånt(boolean erUdlånt) {
+        this.erUdlånt = erUdlånt;
     }
 
     public String getTitle() {
