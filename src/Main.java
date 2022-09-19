@@ -19,8 +19,6 @@ public class Main {
             System.out.println(sprog.hi());
 
             if (Input.getString(sprog.changelanguage()).equalsIgnoreCase("y")) {
-//                System.out.println(dialog.selectLangage());
-//                ans = scanner.nextLine();
 
                 switch (Input.getString(sprog.selectLangage())) {
                     case "D":

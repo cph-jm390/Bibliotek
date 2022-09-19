@@ -8,5 +8,4 @@ public abstract class Sprog {
 
 
     public abstract String selectLangage();
-
 }
