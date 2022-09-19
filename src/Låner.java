@@ -1,5 +1,3 @@
-import ÆndringAfSprog.Bog;
-
 import java.util.ArrayList;
 
 public class Låner {
