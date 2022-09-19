@@ -1,5 +1,3 @@
-package ÆndringAfSprog;
-
 public class Bog {
     int antal;
     String title;
