@@ -1,3 +1,5 @@
+package ÆndringAfSprog;
+
 public class Dansk extends Sprog {
 
     @Override

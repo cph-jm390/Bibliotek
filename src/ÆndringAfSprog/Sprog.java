@@ -1,3 +1,5 @@
+package ÆndringAfSprog;
+
 public abstract class Sprog {
 
     public abstract String hi();
