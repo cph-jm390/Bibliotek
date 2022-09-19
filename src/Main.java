@@ -18,18 +18,22 @@ public class Main {
 
             System.out.println(sprog.hi());
 
-            if (Input.getString(Sprog.changelanguage()).equalsIgnoreCase("y")) {
+            if (Input.getString(sprog.changelanguage()).equalsIgnoreCase("y")) {
+//                System.out.println(dialog.selectLangage());
+//                ans = scanner.nextLine();
 
-                switch (Input.getString(Sprog.selectLangage())) {
+                switch (Input.getString(sprog.selectLangage())) {
+                    case "D":
+                        sprog = new Dansk();
+                        break;
                     case "E":
                         sprog = new Engelsk();
                         break;
                     case "F":
                         sprog = new Finsk();
                         break;
-                    case "D":
                     default:
-                        sprog = new Dansk();
+                        sprog = new Engelsk();
                 }
             }
         }
