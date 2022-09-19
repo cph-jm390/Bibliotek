@@ -1,6 +1,42 @@
+import ÆndringAfSprog.Dansk;
+import ÆndringAfSprog.Engelsk;
+import ÆndringAfSprog.Finsk;
+import ÆndringAfSprog.Sprog;
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
+        Scanner scanner = new Scanner(System.in);
+
+        String ans = " ";
+
+        Sprog sprog = new Engelsk();
+
+        while (true) {
+
+            System.out.println(sprog.hi());
+//            System.out.println(dialog.changelanguage());
+//            ans = scanner.nextLine();
+
+            if (Input.getString(Sprog.changelanguage()).equalsIgnoreCase("y")) {
+//                System.out.println(dialog.selectLangage());
+//                ans = scanner.nextLine();
+
+                switch (Input.getString(Sprog.selectLangage())) {
+                    case "E":
+                        sprog = new Engelsk();
+                        break;
+                    case "F":
+                        sprog = new Finsk();
+                        break;
+                    case "D":
+                    default:
+                        sprog = new Dansk();
+                }
+            }
+        }
     }
 }
 
