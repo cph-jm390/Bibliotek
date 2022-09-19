@@ -17,12 +17,8 @@ public class Main {
         while (true) {
 
             System.out.println(sprog.hi());
-//            System.out.println(dialog.changelanguage());
-//            ans = scanner.nextLine();
 
             if (Input.getString(Sprog.changelanguage()).equalsIgnoreCase("y")) {
-//                System.out.println(dialog.selectLangage());
-//                ans = scanner.nextLine();
 
                 switch (Input.getString(Sprog.selectLangage())) {
                     case "E":
