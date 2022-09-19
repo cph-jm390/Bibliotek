@@ -1,5 +1,3 @@
-package ÆndringAfSprog;
-
 public class Finsk extends Sprog {
 
     @Override
