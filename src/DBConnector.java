@@ -1,5 +1,7 @@
 import java.sql.*;
 import java.util.ArrayList;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class DBConnector {
 
@@ -63,13 +65,22 @@ public class DBConnector {
     }
 
     public void insertBooktoDB(ArrayList<Bog> bogliste){
-        int idBog;
         String navn;
         int antalBøger;
         boolean erUdlånt;
 
         for (Bog b : bogliste){
-            idBog = b.BogID;
+            navn = b.title;
+            antalBøger = b.antal;
+            erUdlånt = b.erUdlånt;
+
+            String insertBookToDB = "INSERT into bog ('" + navn + "','" + antalBøger + "','" + erUdlånt +"')";
+            try{
+                PreparedStatement query1 = connection.prepareStatement(insertBookToDB);
+                var query1Result = query1.executeUpdate();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
         }
 
     }

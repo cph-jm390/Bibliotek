@@ -12,6 +12,7 @@ public class Bog {
         this.title = title;
         this.BogID = bogID;
 
+
     }
 
     public int getAntal() {
