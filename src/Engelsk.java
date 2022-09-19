@@ -1,5 +1,3 @@
-package ÆndringAfSprog;
-
 public class Engelsk extends Sprog{
 
     @Override

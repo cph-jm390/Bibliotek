@@ -1,5 +1,3 @@
-package ÆndringAfSprog;
-
 public abstract class Sprog {
 
     public abstract String hi();
@@ -8,9 +6,12 @@ public abstract class Sprog {
         return null;
     }
 
+    public abstract String changelanguage();
+
     public static String selectLangage() {
         return null;
     }
 
 
+    public abstract String selectLangage();
 }
