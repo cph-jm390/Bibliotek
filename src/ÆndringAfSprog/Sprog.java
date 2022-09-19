@@ -6,6 +6,5 @@ public abstract class Sprog {
 
     public abstract String changelanguage();
 
-
     public abstract String selectLangage();
 }

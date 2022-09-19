@@ -1,14 +1,16 @@
 public class Bog {
     int antal;
     String title;
+    int BogID;
 
     public Bog(String title) {
         this.title = title;
     }
 
-    public Bog(int antal, String title) {
+    public Bog(int antal, String title, int bogID) {
         this.antal = antal;
         this.title = title;
+        this.BogID = bogID;
 
     }
 
