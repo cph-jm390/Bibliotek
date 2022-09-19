@@ -3,4 +3,6 @@ public class Main {
 
     }
 }
-gi
+
+
+//Bruger: arraylist af bøger der kan fjernes
