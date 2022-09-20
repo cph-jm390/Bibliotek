@@ -4,10 +4,7 @@ public class Input {
 
     Scanner scan = new Scanner(System.in);
 
-    public static String getString(String changelanguage) {
 
-        return changelanguage;
-    }
 
     public int nySession() {
         System.out.println("angiv låner ID med tal");
@@ -16,14 +13,14 @@ public class Input {
         return getInt(input);
     }
 
-    /*
+
     public static String getString(String s){
         Scanner scanner = new Scanner (System.in);
         System.out.println(s+" : ");
         return scanner.nextLine();
     }
 
-     */
+
     public static int getInt(String s){
         int svar = 0;
         while (true) {

@@ -9,7 +9,7 @@ public class Engelsk extends Sprog{
 
     @Override
     public String changelanguage() {
-        return "Do you want to change language?";
+        return "Press 1 for : Change language";
     }
 
     @Override

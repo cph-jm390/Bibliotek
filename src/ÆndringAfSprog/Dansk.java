@@ -11,7 +11,7 @@ public class Dansk extends Sprog {
     @Override
     public String changelanguage() {
 
-        return "Ønsker du at skifte sprog?";
+        return "Tryk 1 for : Skift sprog";
     }
 
     @Override

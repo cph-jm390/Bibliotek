@@ -9,11 +9,11 @@ public class Finsk extends Sprog {
 
     @Override
     public String changelanguage() {
-        return "Haluatko vaihtaa kieltä?";
+        return "Lehdistö 1 varten : Vaihda kieltä";
     }
 
     @Override
     public String selectLangage() {
-        return "Paina F vaihtaaksesi kielen suomeksi";
+        return "Paina 1 vaihtaaksesi kielen englanti \\r\\n Paina 2 vaihtaaksesi kielen yanskan kieli\\r\\nPaina 3 vaihtaaksesi kielen suomeksi";
     }
 }

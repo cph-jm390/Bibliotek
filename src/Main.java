@@ -18,16 +18,16 @@ public class Main {
 
             System.out.println(sprog.hi());
 
-            if (Input.getString(sprog.changelanguage()).equalsIgnoreCase("y")) {
+            if (Input.getString(sprog.changelanguage()).equalsIgnoreCase("a")) {
 
-                switch (Input.getString(sprog.selectLangage())) {
-                    case "D":
+                switch (Input.getInt(sprog.selectLangage())) {
+                    case 1:
                         sprog = new Dansk();
                         break;
-                    case "E":
+                    case 2:
                         sprog = new Engelsk();
                         break;
-                    case "F":
+                    case 3:
                         sprog = new Finsk();
                         break;
                     default:
