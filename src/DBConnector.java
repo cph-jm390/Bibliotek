@@ -11,6 +11,9 @@ public class DBConnector {
     String username = "root";
     String password = "NY9hcW7DAZ!+-qg1:]G6";
 
+    Låner låner = new Låner();
+    Bog bog = new bog();
+
     public void createConnection() {
         System.out.println("Entered Create Connection");
 
@@ -25,7 +28,7 @@ public class DBConnector {
 
                 case 2 -> { //Save Team data to DB
                     System.out.println("Inside of SaveTeamList");
-                    //insertTeamToDB(teamList);
+                    insertBooktoDB();
                     connection.close();
                 }
 
@@ -65,32 +68,27 @@ public class DBConnector {
         }
     }
 
-    public void insertBooktoDB (Map<Integer, Bog> bøger){
-        String navn;
-        boolean udlånt;
+    public void insertBooktoDB(Map<Integer, Bog> bøger) {
+        String navn = getNavn();
+        boolean erUdlånt;
 
-        for (Bog b : bøger.values()){
-            navn = b.title;
-            udlånt = b.udlånt;
-
-            String insertBookToDB = "INSERT into bog ('" + navn + "','" + "','" + udlånt +"')";
-            try{
-                PreparedStatement query1 = connection.prepareStatement(insertBookToDB);
-                var query1Result = query1.executeUpdate();
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
+        String insertBookToDB = "INSERT into bog (TITLE, ERUDLÅNT) VALUES (navn,erUdlånt)";
+        try {
+            PreparedStatement query1 = connection.prepareStatement(insertBookToDB);
+            var query1Result = query1.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
         }
     }
 
-    public void insertLåneretoDB(Map<Integer, Låner> lånere){
+    public void insertLåneretoDB(Map<Integer, Låner> lånere) {
         String navn;
 
-        for (Låner b : lånere.values()){
+        for (Låner b : lånere.values()) {
             navn = b.navn;
 
-            String insertLåneretoDB = "INSERT into Låner ('" + navn + "','" + "','"+"')";
-            try{
+            String insertLåneretoDB = "INSERT into Låner ('" + navn + "','" + "','" + "')";
+            try {
                 PreparedStatement query1 = connection.prepareStatement(insertLåneretoDB);
                 var query1Result = query1.executeUpdate();
             } catch (SQLException e) {
