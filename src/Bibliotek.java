@@ -10,6 +10,7 @@ public class Bibliotek {
         this.lånere = lånere;
     }
 
+
     public void bogLoad(){
 
     }
@@ -18,15 +19,27 @@ public class Bibliotek {
 
     }
 
-    public void lånBog(Låner låner, Bog bog){
+    public void udlånBog(Låner låner, Bog bog){
 
         låner.lånteBøger.add(new Bog(bog.getTitle()));
 
     }
+
+    public int antalLånere()
+    {
+        int antalLånere=0;
+        for(Integer i:lånere.keySet())
+        {
+            antalLånere+=1;
+        }
+        return antalLånere;
+    }
     public void afleverBog (Låner låner,Bog bog){
 
         låner.lånteBøger.remove(bog);
+
     }
+
 
     public Map<Integer, Bog> getBøger() {
         return bøger;
