@@ -28,5 +28,19 @@ public class Bibliotek {
         låner.lånteBøger.remove(bog);
     }
 
+    public Map<Integer, Bog> getBøger() {
+        return bøger;
+    }
 
+    public void setBøger(Map<Integer, Bog> bøger) {
+        this.bøger = bøger;
+    }
+
+    public Map<Integer, Låner> getLånere() {
+        return lånere;
+    }
+
+    public void setLånere(Map<Integer, Låner> lånere) {
+        this.lånere = lånere;
+    }
 }
