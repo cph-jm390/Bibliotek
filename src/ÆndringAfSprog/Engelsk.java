@@ -9,12 +9,12 @@ public class Engelsk extends Sprog{
 
     @Override
     public String changelanguage() {
-        return "Press 1 for : Change language";
+        return "Press 1 to change language.";
     }
 
     @Override
     public String selectLangage() {
-        return "Press D to change language to Danish " +
-                "Press F to change language to Finnish";
+        return "\nPress 1 to change language to Danish.\nPress 3 to change language to Finnish.";
+
     }
 }

@@ -8,7 +8,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("håber det her virker");
         Scanner scanner = new Scanner(System.in);
 
         String ans = " ";
@@ -19,7 +18,7 @@ public class Main {
 
             System.out.println(sprog.hi());
 
-            if (Input.getString(sprog.changelanguage()).equalsIgnoreCase("a")) {
+            if (Input.getString(sprog.changelanguage()).equals("1")) {
 
                 switch (Input.getInt(sprog.selectLangage())) {
                     case 1:
