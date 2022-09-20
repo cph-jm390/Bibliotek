@@ -3,14 +3,19 @@ public class Bog {
     String title;
     int BogID;
 
+    String forfatter;
+    int udgivelsesÅr;
+
     public Bog(String title) {
         this.title = title;
     }
 
-    public Bog(String title, int bogID,boolean erUdlånt ) {
+    public Bog(String title, int bogID,boolean erUdlånt, String forfatter, int udgivelsesÅr ) {
         this.erUdlånt = erUdlånt;
         this.title = title;
         this.BogID = bogID;
+        this.forfatter=forfatter;
+        this.udgivelsesÅr=udgivelsesÅr;
 
 
     }
