@@ -11,6 +11,10 @@ public class Låner {
         this.lånerID = lånerID;
     }
 
+    public Låner() {
+
+    }
+
     public String getNavn() {
         return navn;
     }
