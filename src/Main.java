@@ -3,11 +3,11 @@ import ÆndringAfSprog.Engelsk;
 import ÆndringAfSprog.Finsk;
 import ÆndringAfSprog.Sprog;
 
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
 
         String ans = " ";
@@ -18,7 +18,11 @@ public class Main {
 
             System.out.println(sprog.hi());
 
+<<<<<<< HEAD
             if (Input.getString(sprog.changelanguage()).equalsIgnoreCase("1")) {
+=======
+            if (Input.getString(sprog.changelanguage()).equals("1")) {
+>>>>>>> 392923e20f6f42b66f8666844a2b06b89410fa36
 
                 switch (Input.getInt(sprog.selectLangage())) {
                     case 1:
