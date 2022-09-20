@@ -67,13 +67,13 @@ public class DBConnector {
 
     public void insertBooktoDB (Map<Integer, Bog> bøger){
         String navn;
-        boolean erUdlånt;
+        boolean udlånt;
 
         for (Bog b : bøger.values()){
             navn = b.title;
-            erUdlånt = b.erUdlånt;
+            udlånt = b.udlånt;
 
-            String insertBookToDB = "INSERT into bog ('" + navn + "','" + "','" + erUdlånt +"')";
+            String insertBookToDB = "INSERT into bog ('" + navn + "','" + "','" + udlånt +"')";
             try{
                 PreparedStatement query1 = connection.prepareStatement(insertBookToDB);
                 var query1Result = query1.executeUpdate();
