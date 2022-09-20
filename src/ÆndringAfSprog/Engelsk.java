@@ -4,7 +4,7 @@ public class Engelsk extends Sprog{
 
     @Override
     public String hi() {
-        return "Hello and welcome!";
+        return "Hello and welcome to the slackergroups library!";
     }
 
     @Override
@@ -14,7 +14,6 @@ public class Engelsk extends Sprog{
 
     @Override
     public String selectLangage() {
-        return "Press D to change language to Danish " +
-                "Press F to change language to Finnish";
+        return "Press 1 for english" +"\n"+ "Press 2 for danish"+ "\n"+"Press 3 for finnish";
     }
 }

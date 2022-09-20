@@ -5,7 +5,7 @@ public class Dansk extends Sprog {
     @Override
     public String hi() {
 
-        return "Hej og velkommen til getName Bank!";
+        return "Hej og velkommen til slackergruppens bibliotek!";
     }
 
     @Override
@@ -17,6 +17,5 @@ public class Dansk extends Sprog {
     @Override
     public String selectLangage() {
 
-        return "Tryk E for at skifte sprog til engelsk";
-    }
+        return "Tryk 1 for engelsk" +"\n"+ "Tryk 2 for dansk"+ "\n"+"Tryk 3 for finsk";    }
 }
