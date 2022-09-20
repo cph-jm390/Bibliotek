@@ -18,14 +18,14 @@ public class Main {
 
             System.out.println(sprog.hi());
 
-            if (Input.getString(sprog.changelanguage()).equalsIgnoreCase("a")) {
+            if (Input.getString(sprog.changelanguage()).equalsIgnoreCase("1")) {
 
                 switch (Input.getInt(sprog.selectLangage())) {
                     case 1:
-                        sprog = new Dansk();
+                        sprog = new Engelsk();
                         break;
                     case 2:
-                        sprog = new Engelsk();
+                        sprog = new Dansk();
                         break;
                     case 3:
                         sprog = new Finsk();

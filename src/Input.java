@@ -16,7 +16,7 @@ public class Input {
 
     public static String getString(String s){
         Scanner scanner = new Scanner (System.in);
-        System.out.println(s+" : ");
+        System.out.println(s);
         return scanner.nextLine();
     }
 
