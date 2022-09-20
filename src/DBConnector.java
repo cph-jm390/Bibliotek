@@ -71,10 +71,9 @@ public class DBConnector {
 
         for (Bog b : bogliste){
             navn = b.title;
-            antalBøger = b.antal;
             erUdlånt = b.erUdlånt;
 
-            String insertBookToDB = "INSERT into bog ('" + navn + "','" + antalBøger + "','" + erUdlånt +"')";
+            String insertBookToDB = "INSERT into bog ('" + navn + "','" + "','" + erUdlånt +"')";
             try{
                 PreparedStatement query1 = connection.prepareStatement(insertBookToDB);
                 var query1Result = query1.executeUpdate();
@@ -82,7 +81,6 @@ public class DBConnector {
                 throw new RuntimeException(e);
             }
         }
-
     }
 }
 
