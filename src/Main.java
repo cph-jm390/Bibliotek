@@ -30,6 +30,9 @@ public class Main {
                     case 3:
                         sprog = new Finsk();
                         break;
+                    case 4:
+                        sprog = new Engelsk();
+                        break;
                     default:
                         sprog = new Engelsk();
                 }

@@ -14,6 +14,6 @@ public class Finsk extends Sprog {
 
     @Override
     public String selectLangage() {
-        return "Paina 1 vaihtaaksesi kielen englanti" +"\n"+ "Paina 2 vaihtaaksesi kielen yanskan kieli"+ "\n"+"Paina 3 vaihtaaksesi kielen suomeksi";
+        return "Paina 1 vaihtaaksesi kielen englanti" +"\n"+ "Paina 2 vaihtaaksesi kielen yanskan kieli"+ "\n"+"Paina 3 vaihtaaksesi kielen suomeksi"+ "\n"+"Paina 3 vaihtaaksesi kielen suomeksi";
     }
 }
