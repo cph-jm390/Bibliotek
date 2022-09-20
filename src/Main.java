@@ -3,6 +3,7 @@ import ÆndringAfSprog.Engelsk;
 import ÆndringAfSprog.Finsk;
 import ÆndringAfSprog.Sprog;
 
+
 import java.util.Scanner;
 
 public class Main {
