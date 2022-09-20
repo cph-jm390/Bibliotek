@@ -11,9 +11,6 @@ public class DBConnector {
     String username = "root";
     String password = "NY9hcW7DAZ!+-qg1:]G6";
 
-    Låner låner = new Låner();
-    Bog bog = new bog();
-
     public void createConnection() {
         System.out.println("Entered Create Connection");
 
@@ -28,7 +25,7 @@ public class DBConnector {
 
                 case 2 -> { //Save Team data to DB
                     System.out.println("Inside of SaveTeamList");
-                    insertBooktoDB();
+                    //insertTeamToDB(teamList);
                     connection.close();
                 }
 
@@ -68,18 +65,6 @@ public class DBConnector {
         }
     }
 
-<<<<<<< HEAD
-    public void insertBooktoDB(Map<Integer, Bog> bøger) {
-        String navn = getNavn();
-        boolean erUdlånt;
-
-        String insertBookToDB = "INSERT into bog (TITLE, ERUDLÅNT) VALUES (navn,erUdlånt)";
-        try {
-            PreparedStatement query1 = connection.prepareStatement(insertBookToDB);
-            var query1Result = query1.executeUpdate();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-=======
     public void insertBooktoDB (Map<Integer, Bog> bøger){
         String navn;
         boolean udlånt;
@@ -95,18 +80,17 @@ public class DBConnector {
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
->>>>>>> refs/remotes/origin/master
         }
     }
 
-    public void insertLåneretoDB(Map<Integer, Låner> lånere) {
+    public void insertLåneretoDB(Map<Integer, Låner> lånere){
         String navn;
 
-        for (Låner b : lånere.values()) {
+        for (Låner b : lånere.values()){
             navn = b.navn;
 
-            String insertLåneretoDB = "INSERT into Låner ('" + navn + "','" + "','" + "')";
-            try {
+            String insertLåneretoDB = "INSERT into Låner ('" + navn + "','" + "','"+"')";
+            try{
                 PreparedStatement query1 = connection.prepareStatement(insertLåneretoDB);
                 var query1Result = query1.executeUpdate();
             } catch (SQLException e) {
