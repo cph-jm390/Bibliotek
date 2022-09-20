@@ -24,6 +24,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+<<<<<<< HEAD
       <library name="testng">
         <CLASSES>
           <root url="jar://$MAVEN_REPOSITORY$/org/testng/testng/7.1.0/testng-7.1.0.jar!/" />
@@ -39,6 +40,8 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+=======
+>>>>>>> refs/remotes/origin/master
       <library>
         <CLASSES>
           <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter/5.8.1/junit-jupiter-5.8.1.jar!/" />

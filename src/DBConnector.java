@@ -68,6 +68,7 @@ public class DBConnector {
         }
     }
 
+<<<<<<< HEAD
     public void insertBooktoDB(Map<Integer, Bog> bøger) {
         String navn = getNavn();
         boolean erUdlånt;
@@ -78,6 +79,23 @@ public class DBConnector {
             var query1Result = query1.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);
+=======
+    public void insertBooktoDB (Map<Integer, Bog> bøger){
+        String navn;
+        boolean udlånt;
+
+        for (Bog b : bøger.values()){
+            navn = b.title;
+            udlånt = b.udlånt;
+
+            String insertBookToDB = "INSERT into bog ('" + navn + "','" + "','" + udlånt +"')";
+            try{
+                PreparedStatement query1 = connection.prepareStatement(insertBookToDB);
+                var query1Result = query1.executeUpdate();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+>>>>>>> refs/remotes/origin/master
         }
     }
 

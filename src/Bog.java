@@ -1,5 +1,5 @@
 public class Bog {
-    boolean erUdlånt;
+    boolean udlånt;
     String title;
     int BogID;
 
@@ -10,8 +10,8 @@ public class Bog {
         this.title = title;
     }
 
-    public Bog(String title, int bogID,boolean erUdlånt, String forfatter, int udgivelsesÅr ) {
-        this.erUdlånt = erUdlånt;
+    public Bog(String title, int bogID,boolean udlånt, String forfatter, int udgivelsesÅr ) {
+        this.udlånt = udlånt;
         this.title = title;
         this.BogID = bogID;
         this.forfatter=forfatter;
@@ -28,12 +28,12 @@ public class Bog {
         BogID = bogID;
     }
 
-    public boolean isErUdlånt() {
-        return erUdlånt;
+    public boolean isUdlånt() {
+        return udlånt;
     }
 
-    public void setErUdlånt(boolean erUdlånt) {
-        this.erUdlånt = erUdlånt;
+    public void setUdlånt(boolean udlånt) {
+        this.udlånt = udlånt;
     }
 
     public String getTitle() {
